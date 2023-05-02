@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>To Do List</title>
+</head>
+<body>
+   
+
+    <div class="container">
+        <h1>Todo List</h1>
+        <form>
+          <label for="atividade">Atividade:</label>
+          <input required type="text" id="atividade" name="atividade">
+          <label for="days">Dia:</label>
+          
+          <select id="days" name="days">
+            <option value="segunda">Segunda-feira</option>
+            <option value="terca">Terça-feira</option>
+            <option value="quarta">Quarta-feira</option>
+            <option value="quinta">Quinta-feira</option>
+            <option value="sexta">Sexta-feira</option>
+          </select>
+          <button type="button" onclick="addTodoList()">Adicionar</button>
+          <button onclick="resetTodoList()" id="apagarConcluidas">Limpar Concluídos</button>
+        </form>
+        <h2>Segunda-feira</h2>
+        <ul id="todoListSegunda"></ul>
+        <h2>Terça-feira</h2>
+        <ul id="todoListTerça"></ul>
+        <h2>Quarta-feira</h2>
+        <ul id="todoListQuarta"></ul>
+        <h2>Quinta-feira</h2>
+        <ul id="todoListQuinta"></ul>
+        <h2>Sexta-feira</h2>
+        <ul id="todoListSexta"></ul>
+      </div>
+</body>
+</html>
